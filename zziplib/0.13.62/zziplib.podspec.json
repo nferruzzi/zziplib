@@ -18,7 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "prepare_command": "sed -i -E 's|#define ZZIP_HAVE_BYTESWAP_H  1|#undef ZZIP_HAVE_BYTESWAP_H|g' zzip/_config.h",
+  "prepare_command": "sed -i -E 's|#define ZZIP_HAVE_BYTESWAP_H  1|#undef ZZIP_HAVE_BYTESWAP_H|g' zzip/_config.h\nsed -i -E 's|#define _zzip_inline inline|#define _zzip_inline|g' zzip/conf.h",
   "source_files": "zzip/*.{h,c}",
   "header_dir": "zzip",
   "exclude_files": [
