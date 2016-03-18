@@ -23,10 +23,6 @@
   "header_dir": "zzip",
   "exclude_files": [
   ],
-  "private_header_files": [
-    "zzip/_*.h",
-    "zzip/file.h"
-  ],
   "xcconfig": {
     "USE_HEADERMAP": false,
     "ALWAYS_SEARCH_USER_PATHS": false,
